@@ -32,6 +32,9 @@ class UserResource extends Resource
         return $table
 
             ->columns([
+                      Column::make('id')->label('ID'),
+                      Column::make('name')->label('Nome'),
+                      Column::make('email')->label('E-mail'),
             ])
             ->filters([
                 //
